@@ -1,0 +1,169 @@
+footer,#discc{
+	margin-left:-45px;
+}
+
+#loginsubmit
+{
+	width:100%;
+}
+
+#avatalogin
+{
+margin-left:20px;}
+
+.jumbotron
+{
+    background-image: url('homeee.jpg');
+    opacity:0.7;
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.trans{ 
+    margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.9;
+}
+
+form
+{
+border-style:ridge;
+padding:20px;
+background-color:#f1f1f1;
+}
+
+#form input[type=text],input[type=email]
+{
+ width:100%;	
+}
+
+#dede
+{
+  text-align: left;
+}
+
+table
+{
+margin-right:50px;}
+
+table tr td 
+{
+	font-size:15px;
+}
+
+#prose
+{
+    width:100%;
+}
+
+#radioo
+{
+    margin-right:40px;
+}
+
+nav
+{
+	text-align:center;
+	background-color:#0046ae!important;
+	color:white!important;
+}
+
+ul li
+{
+list-style:none;
+display:block;
+}
+
+#catcat
+{
+font-weight:bold;	
+font-size:20px;
+}
+
+#catcata
+{
+	font-weight:bold;
+}
+
+#catcatt
+{
+	color:#0043A7;
+	font-size:15px;
+	
+}
+
+body{
+	background-color:white!important;
+	font-familt:Arial,Helvetica,sans-serif;
+}
+
+#loginl
+{
+	font-weight:bold;
+	font-size:15px;
+}
+
+
+#errlogin
+{
+	margin-left:-15px;
+}
+
+nav a{
+	color:white;
+	font-size:15px;
+}
+
+hr
+{
+	border: 1px solid black;
+}
+.navbar-header a:link{color:white!important;}
+.navbar-header a:hover{color:black;}
+.navbar-header a:active{color:red!important;}
+.navbar-header a:visited{color:white!important;}
+
+#toto
+{
+font-weight:bold;
+font-size:16px;
+}
+
+#su
+{
+margin-left:50%;
+margin-right:50%;
+}
+
+#ra
+{
+margin-top:-15px;
+}
+
+#su a
+{
+	color:white;
+}
+
+#hihi
+{
+	font-size:15px;
+	font-weight:bold;
+}
+
+#test
+{
+	margin-left:-15px;
+}
+thead
+{
+	background-color:#AEC5E6!important;
+	font-weight:bold;
+}
+
+#nenw
+{
+	display:block;margin-left:auto; margin-right:auto;
+}
