@@ -1,0 +1,55 @@
+
+<div data-ng-init="updatedata()" class="row">  <!--get data from db-->
+
+ <div class="col-md-3 col-xs-3" id="catcat">
+                Search 
+            </div>           
+		   <div class="col-md-9 col-xs-9">
+                <input type="text" data-ng-model="obj.ProductName" name="searchtype" id="prose"/> <!--store in variable-->
+            </div>
+           
+        </div>
+            
+            <br/><br/>
+            <div class="row">
+                <div class="col-md-3 col-xs-3" id="catcat">
+                
+                    Category
+                </div>
+                <div class="col-md-9 col-xs-9">
+                    <input type="radio" value="smartphone" data-ng-model="obj.category"/>  <!--store in variable-->
+                    <label for="smartphone"  id="radioo">Smartphone</label>
+                    
+                    <input type="radio" value="laptop" data-ng-model="obj.category"/>
+                    <label for="laptop"  id="radioo">Laptop</label>
+                    
+                    <input type="radio" value="" data-ng-model="obj.category"/>
+                    <label for="all" id="radioo">All</label>
+                </div>
+            </div>
+            <br/><hr/>
+			<br/>
+            <div class="row">
+                <div class="col-md-12 col-xs-12" id="catcat">
+                    Product 
+                </div>
+            </div>
+            <div class="row">
+				
+				<div data-ng-repeat='p in products | filter:obj'> <!--filter -->
+				<div id="dede">
+               <product idd={{p.ProductID}} img={{p.Img}} proname={{p.ProductName}} descr={{p.Description}} pri={{p.price}} linkd={{p.morelink}}>
+			   </product>
+			   <div class="col-md-2 col-xs-6"> 
+			   <p id="catcatt">{{p.ProductName}}</p>
+			   <p>{{p.Description}}</p>
+			   <p id="catcata">RM {{p.price}}</p>
+			   <p><a href={{p.morelink}}>View more</a></p>
+			     <button class="btn btn-primary" data-ng-click="addcart(p.ProductID,p.price)">Add to cart</button><br/><br/><br/> <!--add cart button-->
+				 </div>
+			  </div>
+			   
+            </div>
+            </div>
+                
+     

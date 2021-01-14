@@ -1,0 +1,77 @@
+
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <h3>Rating</h3>
+        </div>
+    </div>
+ 
+ <form name="myForm" id="form" method="post" class="range-field" data-ng-submit="submit()" novalidate="novalidate">
+	<br/>
+	<div class="form-group">
+    <div class="row">
+        <div id="hihi" class="col-md-12 col-xs-12">
+        How is the service (swipe right if satisfied )
+        </div>    
+    </div>
+    
+        <div class="row">
+        <div class="col-md-12 col-xs-12">
+		 <div ng-init='user.r1=3'>
+            <input id="customRange11" class="border-0" data-slider-id='ex1Slider' type="range" min="0" max="5"   data-slider-step="1" data-ng-model="user.r1" />
+			<span>{{user.r1}}</span><!--display the slider current value-->
+        
+        </div>    
+    </div>
+	</div>
+    <br/>
+	<div class="form-group">
+        <div class="row">
+        <div id="hihi" class="col-md-12 col-xs-12">
+        How likely would you recommend to your friend (swipe right if more likely)
+        </div>    
+    </div>
+    
+        <div class="row">
+        <div class="col-md-12 col-xs-12">
+             <div ng-init='user.r2=3'>
+            <input type="range" class="border-0" data-slider-id='ex2Slider' min="0" max="5" class="range"  data-slider-step="1" data-ng-model="user.r2"/>
+		<span>{{user.r2}}</span><!--display the current slider value-->
+		
+		</div>
+			</div>
+        </div>    
+    </div>
+<br/>        
+
+<div class="form-group">
+<div class="row">
+        <div id="hihi" class="col-md-12 col-xs-12">
+            
+            Give us some feedback
+        </div>    
+    </div>
+        <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <div ng-init='myForm.fed.$valid=false'>
+            <input type="text" ng-pattern=".+" data-ng-model="user.fed"  required/>
+			 <div ng-if="user.fed==null"> <!--if it is false-->
+                                        <div class="form-group has-error has-feedback"><label for="fnamel" class="col-md-12 col-xs-12 control-label" for="inputError" id="test">
+<!--display these string-->
+                                           Please write something for your feedback</label></div>    <!--show text if the input is not fulfil the requirement-->
+                                    </div> 
+        </div>    
+    </div></div>
+	</div>
+	    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <br/>
+			<a href="#product">
+			<!--disabled button if form is invalid-->
+            <button id="loginsubmit" data-ng-disabled="myForm.$invalid" type="button" ng-model="btns" class="btn btn-primary" data-ng-click="addfed(user.r1,user.r2,user.fed)">Submit</button></a>
+        </div>    
+    </div>
+	
+    </form>
+    
+    
+     
