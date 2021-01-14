@@ -1,0 +1,40 @@
+    
+   <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <h3>Cart</h3>
+        </div>
+    </div>
+
+    <div data-ng-init="updatecart();">  <!--connect to table-->
+	            <table class="table table-responsive table-bordered table-striped">
+                    <div class="row">
+    
+					<thead>
+					<tr>
+							<div class="col-md-6 col-xs-6"><td>Product</td></div>
+                        
+                            <div class="col-md-6 col-xs-6"><td>Price(RM)</td></div>
+                    </tr>
+                  </thead>
+				  </div>
+				  <div class="row">
+                        <tr data-ng-repeat="x in carts"> <!--ngrepeat get value-->
+                            <div class="col-md-6 col-xs-6"><td>{{x.ProductName}}</td></div>
+                            <div class="col-md-6 col-xs-6"><td>{{x.Price}}</td></div> 
+						
+						</tr>
+            </div>
+                    
+                  <div class="row">
+                    <div class="col-md-6 col-xs-6"><tr id="toto"><td>Total</td></div>
+                    <div class="col-md-6 col-xs-6"><td>{{getT()}}</td></div>
+					<!--get the total value-->
+				</div>
+                </table>
+			<br/><br/>
+			<span data-ng-show="getT()>0">
+			<div class="row"><div class="col-md-12 col-xs-12">
+<a href="#sub"><button id="loginsubmit" type="button" class="btn btn-primary" data-ng-click="ins_d(toto)">Submit</button></a> </div></div>           <!--disable if no item in the cart--></span>
+</div>       
+              
+			   <br/><br/>
